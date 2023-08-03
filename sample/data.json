@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "orderId": "Order 1",
+        "orderValue": 0.568,
+        "paymentType": "Cash",
+        "vehicleType": "Bike"
+    },
+    {
+        "id": 2,
+        "orderId": "Order 2",
+        "orderValue": 0,
+        "paymentType": "Paid",
+        "vehicleType": "Car"
+    },
+    {
+        "id": 3,
+        "orderId": "Order 3",
+        "orderValue": 2.56,
+        "paymentType": "Cash",
+        "vehicleType": "Car"
+    },
+    {
+        "id": 4,
+        "orderId": "Order 4",
+        "orderValue": 4,
+        "paymentType": "Cash",
+        "vehicleType": "Bike"
+    }
+]

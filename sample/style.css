@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_container {
+    padding: 20px;
+}
+
+#cards {
+    margin: 10px 0;
+}
+
+.card_item {
+    padding: 12px 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    background-color: #f7f2f2;
+}
+
+.card_item .info {
+    font-size: 14px;
+    font-weight: 400;
+    color: #444;
+    margin-top: 6px;
+}

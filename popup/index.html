@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+</head>
+
+<body>
+    <div class="container">
+        <h3 style="text-align: center;">The Chromex</h3>
+        <p style="text-align: center;">This is a simple Chrome extension</p>
+
+        <form method="POST" id="form_container">
+            <input type="text" name="orderId" placeholder="Order ID">
+            <input type="text" name="orderValue" placeholder="Value">
+            <select name="vehicleType">
+                <option value="Bike">Bike</option>
+                <option value="Car">Car</option>
+            </select>
+            <select name="paymentType">
+                <option value="Cash">Cash</option>
+                <option value="Paid">Paid</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script type="module" src='popup.js'></script>
+    <script src='../utils.js'></script>
+</body>
+
+</html>
