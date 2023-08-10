@@ -4,20 +4,27 @@
     box-sizing: border-box;
 }
 
+button {
+    border: none;
+}
+
 .main_container {
     padding: 20px;
 }
 
 #cards {
     margin: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-gap: 10px;
 }
 
 .card_item {
     padding: 12px 8px;
     border-radius: 4px;
-    margin-bottom: 8px;
     border: 1px solid #ccc;
     background-color: #f7f2f2;
+    min-height: 140px;
 }
 
 .card_item .info {
