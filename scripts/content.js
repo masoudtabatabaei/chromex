@@ -2,10 +2,13 @@ const handleAddInfoBtns = () => {
     let items = document.querySelectorAll(".card_item");
     console.log("items --> ", items);
     items.forEach(item => {
-        const btn = document.createElement("button");
-        btn.classList.add("add_info");
-        btn.textContent = "Add Info";
-        item.appendChild(btn);
+        let addBtnElement = item.getElementsByClassName("add_info")[0];
+        if (!addBtnElement) {
+            const btn = document.createElement("button");
+            btn.classList.add("add_info");
+            btn.textContent = "Add Info";
+            item.appendChild(btn);
+        }
     });
 }
 
@@ -29,4 +32,9 @@ const addNewButtonOnOrderBox = () => {
     });
 }
 
-window.addEventListener("load", addNewButtonOnOrderBox, false);
+window.addEventListener("load", () => {
+    console.log("-- Loaded content.js--");
+    setInterval(() => {
+        addNewButtonOnOrderBox();
+    }, 3000);
+});
