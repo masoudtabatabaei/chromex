@@ -1,6 +1,6 @@
 const handleAddInfoBtns = () => {
     let items = document.querySelectorAll(".card_item");
-    console.log("items --> ", items);
+    // console.log("items --> ", items);
     items.forEach(item => {
         let addBtnElement = item.getElementsByClassName("add_info")[0];
         if (!addBtnElement) {
@@ -32,4 +32,10 @@ window.addEventListener("load", () => {
     setInterval(() => {
         handleAddInfoBtns();
     }, 3000);
+});
+
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+    console.log(message);
+    sendResponse({ message: "Response from content.js" });
+    return true;
 });
