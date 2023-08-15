@@ -25,10 +25,10 @@ const renderData = () => {
     chrome.storage.local.get(['orderId', 'orderValue', 'paymentType', 'vehicleType'], function (data) {
         const { orderId, orderValue, paymentType, vehicleType } = data;
 
-        orderIdInput.value = orderId;
-        orderValueInput.value = orderValue;
-        paymentTypeInput.value = paymentType;
-        vehicleTypeInput.value = vehicleType;
+        orderIdInput.value = orderId || "";
+        orderValueInput.value = orderValue || 0;
+        paymentTypeInput.value = paymentType || "Paid";
+        vehicleTypeInput.value = vehicleType || "Car";
     });
 }
 
